@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protocolos de Averías</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pag3.css">
+</head>
+
+<nav>
+  <ul>
+    <li>
+      <a href="Página (Proyecto).html" class="nav-link">Página principal</a>
+    </li>
+  </ul>  
+</nav>
+
+<header>
+  <h1>Protocolos de Averías</h1>
+</header>
+
+<body>
+
+  <script src="pag3.js"></script>
+
+  <section class="area">
+
+    <h1>Software</h1>
+    
+    <details>
+      <summary>Protocolos para la mejora de rendimiento y resolución de incidencias en un sistema Linux</summary>
+      
+      <details>
+        <summary>Mejora del Rendimiento del Equipo</summary>
+          <details>
+          <summary>1. Optimización del sistema de archivos</summary>
+            <p>1. Ejecutar un proceso de desfragmentación del sistema de archivos si se utiliza un sistema de archivos que lo admita, como ext4.</p>
+            <p>2. Convertir el sistema de archivos a uno más eficiente, como “Btrfs”, que maneja mejor la fragmentación.</p>
+          </details>
+
+          <details>
+            <summary>2. Desactivación de Servicios Innecesarios</summary>
+            <p>1. Identificar los servicios que no son esenciales para el funcionamiento del sistema.</p>
+            <p>2. Desactivar estos servicios utilizando herramientas como “systemd” o “rcconf”.</p>
+         </details>
+      </details>
+
+      <details>
+        <summary>Resolución de Problemas de Arranque y Funcionamiento del Sistema Operativo</summary>
+     
+      <details>
+        <summary>1. Reparación del Gestor de Arranque (GRUB)</summary>
+        <p>1. Arrancar desde un live CD o USB de Linux.</p>
+        <p>2. Montar la partición raíz del sistema.</p>
+        <p>3. Actualizar o reinstalar GRUB utilizando el comando `grub-install`.</p>
+      </details>
+      
+      <details>
+        <summary>2. Resolución de Problemas de Paquetes</summary>
+        <p>1. Actualizar los repositorios de paquetes utilizando el comando `sudo apt update`.</p>
+        <p>2. Resolver las dependencias faltantes o rotas utilizando el comando `sudo apt --fix-broken install`.</p>
+        <p>3. Forzar la reinstalación de un paquete problemático utilizando el comando `sudo apt-get --reinstall install nombre_del_paquete`.</p>
+      </details>
+      
+      <details>
+        <summary>3. Restauración del Sistema</summary>
+        <p>1. Utilizar herramientas como Timeshift para crear y restaurar instantáneas del sistema.</p>
+        <p>2. Restaurar una instantánea del sistema tomada previamente antes de que ocurriera el problema.</p>
+      </details>
+
+        <details>
+        <summary>4. Resolución de Problemas de Red</summary>
+        <p>1. Verificar la configuración de red utilizando comandos como `ifconfig` o `ip`.</p>
+        <p>2. Reiniciar el servicio de red utilizando comandos como `sudo systemctl restart networking`.</p>
+        <p>3. Verificar la conexión física y los cables de red.</p>
+      </details>
+      </details>
+
+      <details>
+        <summary>Mejora del Rendimiento del Sistema Operativo</summary>
+        <details>
+          <summary>1. Optimización del Arranque del Sistema</summary>
+          <p>1. Analizar y deshabilitar servicios innecesarios en el inicio del sistema.</p>
+          <p>2. Utilizar herramientas como systemd-analyze para identificar y optimizar el tiempo de arranque del sistema.</p>     
+        </details>
+       
+        <details>
+          <summary>2. Actualización de Controladores</summary>
+          <p>1. Verificar la existencia de controladores actualizados para los componentes del sistema, como la tarjeta gráfica o la tarjeta de red.1. Verificar la existencia de controladores actualizados para los componentes del sistema, como la tarjeta gráfica o la tarjeta de red.</p>
+          <p>2. Utilizar herramientas como el Administrador de controladores adicionales (en Ubuntu) para buscar y actualizar controladores disponibles.</p>
+        </details>
+      </details>
+    </details>
+
+    <details>
+      <summary>Protocolos para la mejora de rendimiento y resolución de incidencias en un sistema Windows</summary>
+      
+      <details>
+        <summary>Mejora del Rendimiento del Equipo</summary>
+        
+        <details>
+          <summary>1. Liberación de Espacio en Disco</summary>
+        <p> 1. Utilizar la utilidad de limpieza de disco incorporada en Windows para eliminar archivos temporales y no deseados.</p>
+        <p> 2.Desinstalar programas innecesarios o poco utilizados.</p>
+        <p> 3.Mover archivos grandes o poco utilizados a un almacenamiento externo o a la nube.</p>
+        </details>
+
+        <details>
+          <summary>2. Desactivación de Programas de Inicio Automático</summary>
+        <p> 1. Abrir el Administrador de tareas (Ctrl + Shift + Esc).</p>
+        <p> 2. Ir a la pestaña "Inicio" y desactivar los programas que no son necesarios al iniciar el sistema.</p>
+        <p> 3. Reiniciar el equipo para aplicar los cambios.</p>
+        </details>
+      </details>
+
+      <details>
+        <summary>Resolución de Problemas de Arranque y Funcionamiento del Sistema Operativo</summary>
+       
+        <details>
+          <summary>1. Reparación de Inicio de Windows</summary>
+        <p>1. Insertar el disco de instalación de Windows o una unidad USB de recuperación.</p>
+        <p>2. Iniciar desde el medio de instalación.</p>
+        <p>3. Seleccionar "Reparar el equipo" > "Solucionar problemas" > "Reparación de inicio" y seguir las instrucciones en pantalla.</p>
+        </details>
+        
+        <details>
+          <summary>2. Restauración del Sistema</summary>
+          <p>1. Abrir "Configuración" > "Actualización y seguridad" > "Recuperación".</p>
+          <p>2. En "Restablecer este PC", seleccionar "Comenzar" bajo "Restablecer PC" y seguir las instrucciones para restaurar el sistema a un punto anterior.</p>
+        </details>
+
+        <details>
+          <summary>3. Ejecución del Comprobador de Archivos del Sistema (SFC)</summary>
+          <p>1. Abrir el símbolo del sistema como administrador (buscar "cmd" en el menú de inicio, hacer clic derecho y seleccionar "Ejecutar como administrador").</p>
+          <p>2. Ejecutar el comando `sfc /scannow` y esperar a que finalice el análisis y la reparación de archivos del sistema.</p>
+        </details>
+
+        <details>
+          <summary>4. Ejecución de la Utilidad de Restauración del Sistema</summary>
+        <p>1. Abrir "Restaurar sistema" desde el menú de inicio.</p>
+        <p>2. Seleccionar un punto de restauración anterior a la aparición del problema y seguir las instrucciones para restaurar el sistema.</p>
+        </details>
+      </details>
+
+      <details>
+        <summary>Mejora del Rendimiento del Sistema Operativo</summary>
+        
+        <details>
+          <summary>1. Desactivación de Efectos Visuales</summary>
+        <p>1. Abrir "Sistema" en el Panel de Control.</p>
+        <p>2. Ir a "Configuración avanzada del sistema" y seleccionar "Configuración" en "Rendimiento".</p>
+        <p>3. Seleccionar "Ajustar para obtener el mejor rendimiento" o personalizar los efectos visuales desactivando las opciones no deseadas.</p>
+        </details>
+
+        <details>
+          <summary>2. Actualización de Controladores</summary>
+        <p>1. Abrir "Administrador de dispositivos" desde el menú de inicio.</p>
+        <p>2. Buscar los dispositivos con un triángulo amarillo de advertencia y actualizar los controladores.</p>
+        <p>3. También se pueden actualizar los controladores manualmente desde el sitio web del fabricante.</p>
+        </details>
+      </details>
+    </details>
+
+    <section class="area"></section>
+      
+      <h1>Hardware</h1>
+
+      <details>
+          <summary>Protocolo para la reparación de averías de equipos informáticos</summary>
+          
+          <details>
+            <summary>Mal funcionamiento del Hardware</summary>
+            
+            <details>
+              <summary>1. Problema de la tarjeta gráfica</summary>
+          <p>- Verificar si la tarjeta gráfica está correctamente conectada.</p>
+          <p>- Probar con otra tarjeta gráfica (si es posible).</p>
+          <p>- Actualizar o reinstalar los controladores de la tarjeta gráfica.</p>
+          <p>- Limpiar los conectores de la tarjeta gráfica.</p>
+            </details>
+
+          <details>
+            <summary>2. Fallo del disco duro</summary>
+          <p>- Verificar si el disco duro está correctamente conectado.</p>
+          <p>- Probar con otro cable SATA o puerto SATA (si es posible).</p>
+          <p>- Ejecutar herramientas de diagnóstico del disco duro para verificar la integridad.</p>
+          <p>- Realizar copias de seguridad de los datos importantes antes de que el disco falle por completo.</p>
+          </details>
+
+          <details>
+            <summary>3. Sobrecalentamiento del procesador</summary>
+          <p>- Verificar la correcta instalación del disipador de calor y la pasta térmica.</p>
+          <p>- Limpiar el disipador de calor y los ventiladores para eliminar el polvo acumulado.</p>
+          <p>- Mejorar la ventilación del gabinete de la computadora.</p>
+          <p>- Monitorizar la temperatura del procesador mediante software especializado.</p>
+          </details>
+
+          </details>
+
+          <details>
+            <summary>Mala configuración de la BIOS</summary>
+            
+            <details>
+            <summary>1. Error de fecha y hora incorrectos</summary>
+            <p>- Acceder a la BIOS y ajustar la fecha y hora correctamente.</p>
+            <p>- Reemplazar la batería de la placa base si está agotada.</p>
+            <p>- Actualizar la BIOS a la última versión disponible.</p>
+            </details>
+
+            <details>
+              <summary>2. Configuración de memoria RAM incorrecta</summary>
+              <p>- Acceder a la BIOS y verificar la configuración de la memoria RAM.</p>
+              <p>- Ajustar la configuración de la memoria RAM según las especificaciones del fabricante.</p>
+              <p>- Probar cada módulo de memoria RAM por separado para identificar posibles fallos.</p>
+            </details>
+
+            <details>
+              <summary>3. Problema de arranque prioritario</summary>
+                <p>- Acceder a la BIOS y ajustar el orden de arranque según las preferencias del usuario.</p>
+                <p>- Verificar la conexión del dispositivo desde el que se desea arrancar.</p>
+                <p>- Restablecer los valores predeterminados de la BIOS si es necesario.</p>
+            </details>
+            
+          </details>
+
+          <details>
+          <summary>Problemas de Configuración</summary>
+
+          <details>
+            <summary>1. Configuración de correo electrónico incorrecta</summary>
+            <p>- Verificar la configuración de servidor de correo electrónico (SMTP, POP3, IMAP).</p>
+            <p>- Verificar los ajustes de autenticación y cifrado.</p>
+            <p>- Actualizar o restablecer la contraseña del correo electrónico si es necesario.</p>
+            <p>- Probar con un cliente de correo electrónico alternativo o una aplicación web.</p>
+          </details>
+
+          <details>
+            <summary>2. Problemas de configuración de impresora</summary>
+            <p>- Verificar la conexión de red o USB de la impresora.</p>
+            <p>- Reiniciar la impresora y la computadora.</p>
+            <p>- Verificar y actualizar los controladores de impresora..</p>
+            <p>- Ejecutar la solución de problemas de impresora del sistema operativo.</p>
+          </details>
+
+        </details>
+
+        <details>
+        <summary>Problemas de Seguridad</summary>
+
+        <details>
+          <summary>1. Infección por malware</summary>
+          <p>- Ejecutar un escaneo completo del sistema con software antivirus y antimalware.</p>
+          <p>- Desconectar la computadora de la red para evitar la propagación del malware.</p>
+          <p>- Restaurar el sistema a un punto de restauración anterior.</p>
+          <p>- Considerar la reinstalación del sistema operativo si la infección es grave.</p>
+        </details>
+
+        <summary>2. Vulnerabilidades de software</summary>
+          <p>- Mantener actualizado el sistema operativo y todas las aplicaciones instaladas.</p>
+          <p>- Utilizar un software de seguridad con funciones de detección de vulnerabilidades.</p>
+          <p>- Deshabilitar o desinstalar software innecesario para reducir la superficie de ataque.</p>
+          <p>- Realizar auditorías de seguridad periódicas en la red y los sistemas.</p>
+        </details>
+      </details>
+
+      <section class="area"></section>
+
+      <h1>Redes</h1>
+
+      <details>
+          <summary>Protocolo para la reparación de averías en redes locales</summary>
+          
+          <details>
+            <summary>1. Pérdida de conectividad a internet</summary>
+            <p>1. Verificar el estado del módem y el enrutador.</p>
+            <p>2. Reiniciar el módem y el enrutador.</p>
+            <p>3. Comprobar la conexión física del cable de red.</p>
+            <p>4. Realizar un diagnóstico de red en el equipo.</p>
+            <p>5. Contactar al proveedor de servicios de internet (ISP) si el problema persiste.</p>
+          </details>
+
+          <details>
+            <summary>2. Lentitud en la red local</summary>
+            <p>1. Verificar la carga de la red y la saturación del ancho de banda.</p>
+            <p>2. Identificar y desconectar dispositivos que puedan estar consumiendo demasiado ancho de banda.</p>
+            <p>3. Comprobar la conexión física del cable de red.</p>
+            <p>4. Actualizar los controladores de red de los equipos.</p>
+            <p>5. Reiniciar los dispositivos de red, como conmutadores o routers, si es necesario.</p>
+          </details>
+
+          <details>
+            <summary>3. Fallo de conexión Wi-Fi</summary>
+            <p>1. Verificar la configuración de Wi-Fi en el dispositivo.</p>
+            <p>2. Reiniciar el router inalámbrico y el dispositivo que intenta conectarse.</p>
+            <p>3. CVerificar si hay interferencias de dispositivos cercanos o obstáculos físicos.</p>
+            <p>4. Actualizar los controladores de la tarjeta de red Wi-Fi.</p>
+            <p>5. Cambiar el canal de transmisión Wi-Fi en el router.</p>
+          </details>
+
+          <details>
+            <summary>4. Fallo en la asignación de direcciones IP (DHCP)</summary>
+            <p>1. Reiniciar el servidor DHCP o el router.</p>
+            <p>2. Verificar la configuración del servidor DHCP.</p>
+            <p>3. Asignar manualmente direcciones IP a los dispositivos afectados como solución temporal.</p>
+            <p>4. Verificar que no haya conflictos de direcciones IP.</p>
+          </details>
+
+          <details>
+            <summary>5. Ataque de denegación de servicio (DoS)</summary>
+            <p>1. Identificar el origen del tráfico malicioso utilizando herramientas de análisis de red.</p>
+            <p>2. Filtrar o bloquear el tráfico malicioso en el firewall o router.</p>
+            <p>3.Implementar medidas de seguridad adicionales, como la detección de intrusos (IDS) o la prevención de intrusiones (IPS).</p>
+            <p>4. Notificar al proveedor de servicios de internet sobre el ataque para que puedan tomar medidas en su red.</p>
+          </details>
+
+          <details>
+            <summary>6. Problemas de resolución de nombres (DNS)</summary>
+            <p>1. Verificar la configuración de DNS en el router o servidor DNS.</p>
+            <p>2. Cambiar a servidores DNS públicos como los de Google (8.8.8.8 y 8.8.4.4).</p>
+            <p>3. Flushing del caché DNS en el equipo afectado.</p>
+            <p>4. Reiniciar el servicio de resolución de nombres en el servidor DNS.</p>
+          </details>
+
+          <details>
+            <summary>7. Interferencias electromagnéticas</summary>
+            <p>1. Alejar los dispositivos electrónicos que puedan estar generando interferencias.</p>
+            <p>2. Cambiar la ubicación del router inalámbrico.</p>
+            <p>3. Utilizar dispositivos inalámbricos en bandas de frecuencia menos congestionadas.</p>
+            <p>4. Utilizar equipos con tecnologías de mitigación de interferencias.</p>
+          </details>
+
+          <details>
+            <summary>8. Configuración incorrecta del firewall</summary>
+            <p>1. Verificar la configuración del firewall para asegurarse de que no esté bloqueando tráfico legítimo.</p>
+            <p>2. Crear reglas de firewall específicas para permitir el tráfico necesario.</p>
+            <p>3. Revisar los registros del firewall para identificar posibles problemas de configuración.</p>
+          </details>
+
+          <details>
+            <summary>8. Configuración incorrecta del firewall</summary>
+            <p>1. Verificar la configuración del firewall para asegurarse de que no esté bloqueando tráfico legítimo.</p>
+            <p>2. Crear reglas de firewall específicas para permitir el tráfico necesario.</p>
+            <p>3. Revisar los registros del firewall para identificar posibles problemas de configuración.</p>
+          </details>
+
+          <details>
+            <summary>9. Problemas de autenticación</summary>
+            <p>1. Verificar que las credenciales de inicio de sesión sean correctas.</p>
+            <p>2. Comprobar si el servidor de autenticación (como un controlador de dominio) está disponible y funcionando correctamente.</p>
+            <p>3. Reiniciar el servidor de autenticación si es necesario.</p>
+            <p>4. Verificar la configuración de políticas de seguridad y permisos de acceso.</p>
+          </details>
+
+          <details>
+            <summary>10. Fallo en la topología de red</summary>
+            <p>1. Revisar físicamente la conexión de cables y puertos en los dispositivos afectados.</p>
+            <p>2. Utilizar herramientas de mapeo de red para identificar problemas de conexión.</p>
+            <p>3. Reconfigurar los dispositivos afectados para restablecer la topología de red.</p>
+          </details>
+
+          </details>
+      <footer>
+        <p>Copyright ©2024 Suportazo S.L.</p>
+      </footer>
+</body>
+</html>
